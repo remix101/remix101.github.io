@@ -7,12 +7,15 @@ $font-button-color: #ffffff;
 $input-font-color: #979797;
 
 
+
+
 body {
   font-family: 'Raleway', sans-serif;
 }
 
+/*------------------------- Header Section ------------------------------ */
 header {
-  height: 720px;
+  height: 640px;
   background-image: url(../assets/img/hero-bg.jpg);
   background-size: cover;
 }
@@ -64,7 +67,7 @@ header::after {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  padding: 100px 0 40px 0;
+  padding: 125px 0 40px 0;
 }
 
 .text-border {
@@ -85,3 +88,5 @@ header::after {
   letter-spacing: .2em;
   font-weight: 500;
 }
+
+/*======================= End of Header Section ====================*/
