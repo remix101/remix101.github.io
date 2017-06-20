@@ -1,5 +1,5 @@
 /** *************Init JS*********************
-	
+
     TABLE OF CONTENTS
 	---------------------------
 	1.Ready function
@@ -36,7 +36,7 @@ $(window).on("load",function(){
 /*****Scroll function start*****/
 $(window).on("scroll",function() {
 	var navTop = $('header');
-	
+
 	/*Header animaion onscroll*/
 	var scroll = $(window).scrollTop();
 	if (scroll >= 150) {
@@ -122,10 +122,10 @@ var penelope = function() {
 		callbackAfter: function(toggle, anchor) {},
 	});
 	/*SmoothScroll End*/
-	
+
 	/*Typed js start*/
 	$("#typed").typed({
-		strings: ["^2100&nbsp;I Am Abe.<br/>UI / UX Developer.<br/> Living in New York City."],
+		strings: ["^2100&nbsp;I Am Charles.<br/>Web Designer and Developer.<br/> Living in Lagos City."],
 		typeSpeed: 30,
 		backDelay: 750,
 		loop: false,
@@ -135,7 +135,7 @@ var penelope = function() {
 		loopCount: false
 	});
 	/*Typed js end*/
-	
+
 	/*Client carousel start*/
 	$('#client_sec .client-carousel').owlCarousel({
 		loop: true,
@@ -167,7 +167,7 @@ var penelope = function() {
 		}
 	});
 	/*Client carousel end*/
-	
+
 	/*Header animation start*/
 	var scroll = $(window).scrollTop();
 	var header = $("header");
@@ -176,7 +176,7 @@ var penelope = function() {
 	else
 		$(header).removeClass("fixed");
 	/*Header animation end*/
-	
+
 	/*Progressbar animation start*/
 	var progressBar = $('.progress-bar-graph div');
 	for (var i = 0; i < progressBar.length; i++) {
@@ -203,7 +203,7 @@ var penelope = function() {
 		});
 	}
 	/*Progressbar animation end*/
-	
+
 	/*Header script start*/
 	var navbarList = $('nav.navbar li');
 	for (var i = 0; i < navbarList.length; i++) {
@@ -211,7 +211,7 @@ var penelope = function() {
 		$(navbarList[i]).find('a').append('<span>' + text + '</span>');
 	}
 	/*Header script end*/
-	
+
 	/*Wow animation(Optional) start*/
 	/*var wow = new WOW(
 	{
@@ -229,264 +229,264 @@ var penelope = function() {
 
 /***** Click function start *****/
 $(document).on('click','.navbar-collapse.in a',function(e) {
-      $('.navbar-collapse.in').collapse('hide'); 
+      $('.navbar-collapse.in').collapse('hide');
 	   return false;
 });
 /***** Click function end *****/
 
-/***** MasonryPortfolio function start *****/		
-if( $('.portfolio-wrap').length > 0 ){	
+/***** MasonryPortfolio function start *****/
+if( $('.portfolio-wrap').length > 0 ){
 	var $container = $('.portf'),
 	$body = $('body');
-	
+
 	/*On Resize Portfolio Function*/
 	var onResizePort= function() {
-		$body.find('.portf').each(function () { 
+		$body.find('.portf').each(function () {
 			var winWidth = window.innerWidth;
 			var container_mock = $('.work-wrap').width();
-			columnNumb = 1;			
+			columnNumb = 1;
 			var attr_col = $(this).attr('data-col');
-				
+
 			 if (winWidth >= 1466) {
-				
+
 				$('.portfolio-wrap').css( {width : container_mock});
-				$('.portfolio-wrap.no-gutter').css( {width : container_mock});			
-				$('.portfolio-wrap.no-gutter.full-width').css( {width : 100  + '%'});			
+				$('.portfolio-wrap.no-gutter').css( {width : container_mock});
+				$('.portfolio-wrap.no-gutter.full-width').css( {width : 100  + '%'});
 				var portfolioWidth = $('.portfolio-wrap').width();
-				
+
 				if (typeof attr_col !== typeof undefined && attr_col !== false) {
 					columnNumb = $(this).attr('data-col');
 				} else columnNumb = 3;
-					
-				var postWidth = Math.floor(portfolioWidth / columnNumb)			
-				$(this).find('.item').each(function () { 
-					$(this).css( { 
+
+				var postWidth = Math.floor(portfolioWidth / columnNumb)
+				$(this).find('.item').each(function () {
+					$(this).css( {
 						width : postWidth - 20 + 'px',
 						height : 'auto',
-						margin : 10 + 'px' 
+						margin : 10 + 'px'
 					});
 					$('.no-gutter .'+$(this).attr('class')).css( {
 						width : postWidth  + 'px',
 						height : 'auto',
-						margin : 0 + 'px' 
+						margin : 0 + 'px'
 					});
-					$('.wide.'+$(this).attr('class')).css( { 
-						width : postWidth * 2 - 20 + 'px'  
+					$('.wide.'+$(this).attr('class')).css( {
+						width : postWidth * 2 - 20 + 'px'
 					});
-					$('.no-gutter .wide.'+$(this).attr('class')).css( { 
-						width : postWidth * 2 + 'px'  
+					$('.no-gutter .wide.'+$(this).attr('class')).css( {
+						width : postWidth * 2 + 'px'
 					});
 					$('.tall.'+$(this).attr('class')).css( {
-						height : 'auto' 
+						height : 'auto'
 					});
 					$('.small.'+$(this).attr('class')).css( {
-						height : 'auto',  
+						height : 'auto',
 					});
-				
+
 					$('.no-gutter .tall.'+$(this).attr('class')).css( {
-						height : 'auto', 
+						height : 'auto',
 					});
 					$('.wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth * 2 - 20 + 'px',
-						height : postWidth * 2 - 20 + 'px'  
+						height : postWidth * 2 - 20 + 'px'
 					});
 					$('.no-gutter .wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth * 2 + 'px',
-						height : 'auto', 
+						height : 'auto',
 					});
 				});
-				
-				
+
+
 			} else if (winWidth > 1024) {
-				
+
 				$('.portfolio-wrap').css( {width : container_mock});
-				$('.portfolio-wrap.no-gutter').css( {width : container_mock});		
+				$('.portfolio-wrap.no-gutter').css( {width : container_mock});
 				var portfolioWidth = $('.portfolio-wrap').width();
-							
+
 				if (typeof attr_col !== typeof undefined && attr_col !== false) {
 					columnNumb = $(this).attr('data-col'); //alert(columnNumb);
 				} else columnNumb = 3;
-				
-				postWidth = Math.floor(portfolioWidth / columnNumb)			
-				$(this).find('.item').each(function () { 
-					
-					$(this).css( { 
+
+				postWidth = Math.floor(portfolioWidth / columnNumb)
+				$(this).find('.item').each(function () {
+
+					$(this).css( {
 						width : postWidth - 20 + 'px',
 						height : 'auto',
-						margin : 10 + 'px' 
+						margin : 10 + 'px'
 					});
-					
+
 					$('.no-gutter .' +$(this).attr('class')).css( {
 						width : postWidth  + 'px',
 						height : 'auto',
-						margin : 0 + 'px' 
+						margin : 0 + 'px'
 					});
-					$('.wide.'+$(this).attr('class') ).css( { 
-						width : postWidth * 2 - 20 + 'px'  
+					$('.wide.'+$(this).attr('class') ).css( {
+						width : postWidth * 2 - 20 + 'px'
 					});
-					$('.no-gutter .wide.'+$(this).attr('class')).css( { 
-						width : postWidth * 2 + 'px'  
+					$('.no-gutter .wide.'+$(this).attr('class')).css( {
+						width : postWidth * 2 + 'px'
 					});
 					$('.tall.'+$(this).attr('class')).css( {
-						height : 'auto', 
+						height : 'auto',
 					});
 					$('.small.'+$(this).attr('class')).css( {
-						height : 'auto',  
+						height : 'auto',
 					});
 					$('.no-gutter .tall.'+$(this).attr('class')).css( {
-						height : 'auto', 
+						height : 'auto',
 					});
 					$('.wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth * 2 - 20 + 'px',
-						height : 'auto', 
+						height : 'auto',
 					});
 					$('.no-gutter .wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth * 2 + 'px',
-						height : 'auto', 
+						height : 'auto',
 					});
 				});
-				
-				
+
+
 			} else if (winWidth > 767) {
-				
+
 				$('.portfolio-wrap').css( {width : container_mock});
 				$('.portfolio-wrap.no-gutter').css({width : container_mock});
 				var portfolioWidth = $('.portfolio-wrap').width(),
-				
+
 				columnNumb = 2;
-				postWidth = Math.floor(portfolioWidth / columnNumb)			
-				$(this).find('.item').each(function () { 
-					$(this).css( { 
+				postWidth = Math.floor(portfolioWidth / columnNumb)
+				$(this).find('.item').each(function () {
+					$(this).css( {
 						width : postWidth - 20 + 'px',
 						height : 'auto',
-						margin : 10 + 'px' 
+						margin : 10 + 'px'
 					});
 					$('.no-gutter .'+$(this).attr('class')).css( {
 						width : postWidth  + 'px',
 						height : 'auto',
-						margin : 0 + 'px' 
+						margin : 0 + 'px'
 					});
-					$('.wide.'+$(this).attr('class')).css( { 
-						width : postWidth * 2 - 20 + 'px'  
+					$('.wide.'+$(this).attr('class')).css( {
+						width : postWidth * 2 - 20 + 'px'
 					});
-					$('.no-gutter .wide.'+$(this).attr('class')).css( { 
-						width : postWidth * 2 + 'px'  
+					$('.no-gutter .wide.'+$(this).attr('class')).css( {
+						width : postWidth * 2 + 'px'
 					});
 					$('.tall.'+$(this).attr('class')).css( {
 						height : 'auto',
 					});
 					$('.small.'+$(this).attr('class')).css( {
-						height : 'auto',  
+						height : 'auto',
 					});
 					$('.no-gutter .tall.'+$(this).attr('class')).css( {
-						height : 'auto', 
+						height : 'auto',
 					});
 					$('.wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth * 2 - 20 + 'px',
-						height : postWidth   + 'px', 
+						height : postWidth   + 'px',
 					});
 					$('.no-gutter .wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth * 2 + 'px',
-						height : 'auto', 
+						height : 'auto',
 					});
 				});
-				
-				
+
+
 			}	else if (winWidth > 479) {
-				
+
 				$('.portfolio-wrap').css( {width : container_mock});
 				$('.portfolio-wrap.no-gutter').css( {width : container_mock});
 				var portfolioWidth = $('.portfolio-wrap').width(),
-				
+
 				columnNumb = 1;
-				postWidth = Math.floor(portfolioWidth / columnNumb)			
-				$(this).find('.item').each(function () { 
-					$(this).css( { 
+				postWidth = Math.floor(portfolioWidth / columnNumb)
+				$(this).find('.item').each(function () {
+					$(this).css( {
 						width : postWidth - 20 + 'px',
 						height : 'auto',
-						margin : 10 + 'px' 
+						margin : 10 + 'px'
 					});
 					$('.no-gutter .'+$(this).attr('class')).css( {
 						width : postWidth  + 'px',
 						height : 'auto',
-						margin : 0 + 'px' 
+						margin : 0 + 'px'
 					});
-					$('.wide.'+$(this).attr('class')).css( { 
-						width : postWidth - 20 + 'px'  
+					$('.wide.'+$(this).attr('class')).css( {
+						width : postWidth - 20 + 'px'
 					});
-					$('.no-gutter .wide.'+$(this).attr('class')).css( { 
-						width : postWidth + 'px'  
+					$('.no-gutter .wide.'+$(this).attr('class')).css( {
+						width : postWidth + 'px'
 					});
 					$('.tall.'+$(this).attr('class')).css( {
-						height : 'auto', 
+						height : 'auto',
 					});
 					$('.small.'+$(this).attr('class')).css( {
-						height : 'auto',  
+						height : 'auto',
 					});
 					$('.no-gutter .tall.'+$(this).attr('class')).css( {
-						height : 'auto', 
+						height : 'auto',
 					});
 					$('.wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth - 20 + 'px',
-						height : postWidth   + 'px', 
+						height : postWidth   + 'px',
 					});
 					$('.no-gutter .wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth  + 'px',
-						height : postWidth   + 'px', 
+						height : postWidth   + 'px',
 					});
 				});
-				
-				
+
+
 			}
-			
+
 			else if (winWidth <= 479) {
-				
+
 				$('.portfolio-wrap').css( {width : container_mock});
 				$('.portfolio-wrap.no-gutter').css( {width : container_mock});
 				var portfolioWidth = $('.portfolio-wrap').width(),
-				
+
 				columnNumb = 1;
-				postWidth = Math.floor(portfolioWidth / columnNumb)			
-				$(this).find('.item').each(function () { 
-					$(this).css( { 
+				postWidth = Math.floor(portfolioWidth / columnNumb)
+				$(this).find('.item').each(function () {
+					$(this).css( {
 						width : postWidth - 20 + 'px',
 						height : 'auto',
-						margin : 10 + 'px' 
+						margin : 10 + 'px'
 					});
 					$('.no-gutter .'+$(this).attr('class')).css( {
 						width : postWidth  + 'px',
 						height : 'auto',
-						margin : 0 + 'px' 
+						margin : 0 + 'px'
 					});
-					$('.wide.'+$(this).attr('class')).css( { 
-						width : postWidth - 20 + 'px'  
+					$('.wide.'+$(this).attr('class')).css( {
+						width : postWidth - 20 + 'px'
 					});
-					$('.no-gutter .wide.'+$(this).attr('class')).css( { 
-						width : postWidth + 'px'  
+					$('.no-gutter .wide.'+$(this).attr('class')).css( {
+						width : postWidth + 'px'
 					});
 					$('.tall.'+$(this).attr('class')).css( {
-						height : 'auto',  
+						height : 'auto',
 					});
 					$('.small.'+$(this).attr('class')).css( {
-						height : 'auto',  
+						height : 'auto',
 					});
 					$('.no-gutter .tall.'+$(this).attr('class')).css( {
-						height : 'auto', 
+						height : 'auto',
 					});
 					$('.wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth - 20 + 'px',
-						height : postWidth   + 'px',  
+						height : postWidth   + 'px',
 					});
 					$('.no-gutter .wide-tall.'+$(this).attr('class')).css( {
 						width : postWidth + 'px',
-						height : postWidth   + 'px', 
+						height : postWidth   + 'px',
 					});
 				});
-				
-				
-			}		
+
+
+			}
 			//alert();
-			
+
 			//return columnNumb;
 		});
 		$container.isotope({
@@ -494,7 +494,7 @@ if( $('.portfolio-wrap').length > 0 ){
 			gutter:0,
 			layoutMode: 'packery',
 			transitionDuration: "0.8s"
-		});		
+		});
 	};
 	/*On Resize Portfolio Function*/
 }
@@ -508,17 +508,17 @@ navCollapse = $('.navbar-collapse.in');
 $(window).on("resize", function() {
 	var winWidth = $(window).outerWidth();
 	onResizePort();
-	
+
 	/*Function calls onresize start*/
 	setHeight();
 	timelineheightCal();
 	/*Function calls onresize end*/
-	
+
 	/*Scrollspy start*/
 	clearTimeout(resizeTimer);
 	resizeTimer = setTimeout(fixSpy, 200);
 	/*Scrollspy end*/
-	
+
 	/*Header Related start*/
 	if (winWidth <= 1182)
 		navBar.removeClass("vertical-nav").appendTo($(".header-wrap"));
@@ -534,7 +534,7 @@ $(document).on("ready",function() {
 	/*Penelope function init start*/
 	penelope();
 	/*Penelope function init end*/
-	
+
 	/*Preload anim start*/
 	$('#la_anim').addClass('la-animate');
 	/*Preload anim end*/
