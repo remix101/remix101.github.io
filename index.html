@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title>Charles Esumeh</title>
+		<title>Charles Esumeh - Front-end  & UX Developer</title>
 		<meta name="description" content="Penelope - CV / Resume / Personal Website Template by Hencework" />
 		<meta name="keywords" content="Penelope, responsive resume template, cv template, multipurpose, responsive template, vcard, html5 template, themeforest, bootstrap, html5, creative, landing page, sass, clean, design, modern, angular js" />
 		<meta name="author" content="Hencework"/>
@@ -17,6 +17,17 @@
 
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style>
+			#sayhello {
+				background: #e91e63;
+				color: #fff;
+				padding: 10px 20px;
+			}
+			#sayhello.btn:hover {
+				background: #fff !important;
+    			color: #000 !important;
+			}
+				</style>
 	</head>
 	<body id="body" data-ng-app="contactApp">
 
@@ -53,9 +64,9 @@
 								<li><a data-scroll href="#services_sec"></a><span>services</span></li>
 								<li><a data-scroll href="#skill_sec"></a><span>skills</span></li>
 								<li><a data-scroll href="#work_sec"></a><span>work</span></li>
-								<li><a data-scroll href="#edu_sec"></a><span>education</span></li>
+								<!-- <li><a data-scroll href="#edu_sec"></a><span>education</span></li>
 								<li><a data-scroll href="#exp_sec"></a><span>experience</span></li>
-								<li><a data-scroll href="#client_sec"></a><span>clients</span></li>
+								<li><a data-scroll href="#client_sec"></a><span>clients</span></li> -->
 								<li><a data-scroll href="#achivement_sec"></a><span>projects</span></li>
 								<li><a data-scroll href="#contact_sec"></a><span>contact</span></li>
 							</ul>
@@ -103,15 +114,15 @@
 								about
 							</h6>
 							<p class="pad-bottom-35 wow fadeInUp" data-wow-duration=".6s">
-								I specialize the Front-end Development of Web Applications using HTML5, CSS3, JavaScript, Jquery and other new technologies to create beautiful and appealing applications for users. Also, work with backend coding technologies mostly in C# and ASP.NET technologies. Play around a lot of open CMS programs like WordPress, Joomla, Magento, Webflow and Open Cart to build creative and unique websites or e-commerce platforms.
+								I specialize in User Interface Design of Web Applications using Angular Js, CSS3, JavaScript, Jquery and a host of other new technologies to create beautiful and appealing applications for users. Also, work with backend coding technologies mostly in C# and ASP.NET technologies. Play around a lot of open CMS programs like WordPress, Joomla, Magento, Webflow and Open Cart to build creative and unique websites or e-commerce platforms.
 							</p>
-							<p class="wow fadeInUp" data-wow-duration=".4s">
-								<!-- I am a complete social animal. Find my work on <a class="goto-social" href="#" target="_blank">Behance</a> & <a href="#" class="goto-social" target="_blank">Dribbble</a>. Experience my photography skills on <a href="#" class="goto-social" target="_blank">Instagram</a> & <a class="goto-social" href="#" target="_blank">Flickr</a>. -->
+							<!-- <p class="wow fadeInUp" data-wow-duration=".4s">
+								I am a complete social animal. Find my work on <a class="goto-social" href="#" target="_blank">Behance</a> & <a href="#" class="goto-social" target="_blank">Dribbble</a>. Experience my photography skills on <a href="#" class="goto-social" target="_blank">Instagram</a> & <a class="goto-social" href="#" target="_blank">Flickr</a>.
 								When I am not coding or managing servers and applications, I love playing video games, watching movies and football with friends and drawing.
-							</p>
-							<div class="per-signature margin-top-sm wow fadeInUp" data-wow-duration=".4s">
+							</p> -->
+							<!-- <div class="per-signature margin-top-sm wow fadeInUp" data-wow-duration=".4s">
 								<img class="img-responsive" src="img/signatureme.png" alt="signature"/>
-							</div>
+							</div> -->
 						</section>
 						<!--/Introduction Sec-->
 
@@ -154,7 +165,7 @@
 						<!--Skills Sec-->
 						<section id="skill_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div skills-wrap  sec-pad-top sec-pad-bottom-xs">
 							<h6>technical skills</h6>
-							<p class="wow fadeInUp" data-wow-duration=".4s">As a Web Developer, I fled from a traditional path and explored my creativity, trough trying my hands on various techniques and software. Software is more than just a tool, and I try to dig deep into it. Today, I knack for critical thinking, empathy and creativity to create viable and impactful solutions using these technologies.</p>
+							<!-- <p class="wow fadeInUp" data-wow-duration=".4s">As a Web Developer, I fled from a traditional path and explored my creativity, trough trying my hands on various techniques and software. Software is more than just a tool, and I try to dig deep into it. Today, I knack for critical thinking, empathy and creativity to create unique and exquisite experiences for my clients.</p> -->
 							<div class="row margin-top-40">
 								<div class="col-sm-5 margin-bottom-sm">
 									<span class="progress-cat">HTML 5</span>
@@ -270,7 +281,7 @@
 
 						<!--Work Sec-->
 						<section id="work_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div work-wrap  sec-pad">
-							<h6>work</h6>
+							<h6>Work</h6>
 							<div  class="portfolio-wrap project-gallery padding-sec-lg">
 								<ul id="portfolio" class="portf auto-construct  project-gallery" data-col="2">
 									<li  class="item"   data-src="img/creative.jpg" data-sub-html="<h6><a href='https://remix101.github.io/sixart/' target='_blank' style='color: #fff;'>SIXART LABS</a></h6><p>Working on creating the perfect site for Sixart Design Labs.</p>" >
@@ -291,18 +302,18 @@
 										<span class="hover-cap">DEVELOPER</span>
 										</a>
 									</li>
-									<li class="item" data-src="img/timezone-app.jpg" data-poster="img/timezone-app.jpg" data-sub-html="<h6>TIME ZONE APP</h6><p>Proposed app design for a Time zone mobile app.</p>">
+									<!-- <li class="item" data-src="img/timezone-app.jpg" data-poster="img/timezone-app.jpg" data-sub-html="<h6>TIME ZONE APP</h6><p>Proposed app design for a Time zone mobile app.</p>">
 										<a href="">
 										<img class="img-responsive" src="img/timezone-app.jpg"  alt="Timezone App" />
 										<span class="hover-cap">TIME ZONE APP</span>
 										</a>
-									</li>
-									<li class="item" data-src="img/webacards.jpg" data-sub-html="<h6>WEB CARDS</h6><p>Design of Web Cards.</p>">
+									</li> -->
+									<!-- <li class="item" data-src="img/webacards.jpg" data-sub-html="<h6>WEB CARDS</h6><p>Design of Web Cards.</p>">
 										<a href="">
 										<img class="img-responsive" src="img/webcards.jpg"  alt="Compex Africa" />
 										<span class="hover-cap">WEB CARDS</span>
 										</a>
-									</li>
+									</li> -->
 									<li class="item" data-src="img/sixart-shirt.jpg" data-sub-html="<h6>SIXART BRANDING</h6><p>Sixart Labs T-Shirt Branding.</p>">
 										<a href="">
 										<img class="img-responsive" src="img/sixart-shirt.jpg"  alt="Image description" />
@@ -311,13 +322,13 @@
 									</li>
 								</ul>
 								<!-- Hidden video div -->
-								<div style="display:none;" id="video1">
+								<!-- <div style="display:none;" id="video1">
 									<video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
 										<source src="videos/video1.mp4" type="video/webm">
 										<source src="videos/video1.webm" type="video/webm">
 										Your browser does not support HTML5 video.
 									</video>
-								</div>
+								</div> -->
 							</div>
 						</section>
 						<!--/Work Sec-->
@@ -325,7 +336,7 @@
 						<hr class="separater-hr"/>
 
 						<!--Qualfication Sec-->
-						<section id="edu_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div education-wrap  sec-pad">
+						<!-- <section id="edu_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div education-wrap  sec-pad">
 							<h6>education</h6>
 							<p class="wow fadeInUp" data-wow-duration=".4s">
 								Have a Bachelor's Degree In Electrical and Electronics Engineering from KNUST, Ghana. Spent the most part of my years in Informaton Technology both as a Consultant and a Web Developer
@@ -363,7 +374,7 @@
 										</span>
 									</div>
 								</div>
-								<!-- <div class="qualfication wow fadeInUp" data-wow-duration=".4s">
+								<<div class="qualfication wow fadeInUp" data-wow-duration=".4s">
 									<div class="col-sm-2">
 										<span class="row-count"><span>3</span></span>
 									</div>
@@ -378,15 +389,15 @@
 										Web Design Diploma
 										</span>
 									</div>
-								</div> -->
+								</div> -
 							</div>
-						</section>
+						</section> -->
 						<!--/Qualfication Sec-->
 
 						<hr class="separater-hr"/>
 
 						<!--Experience Sec-->
-						<section id="exp_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div experience-wrap  sec-pad">
+						<!-- <section id="exp_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div experience-wrap  sec-pad">
 							<h6>experience</h6>
 							<div class="exp-timeline-wrap">
 								<div class="row exp-timeline timeline-active">
@@ -444,7 +455,7 @@
 										</div>
 									</div>
 								</div>
-								<!-- <div class="row exp-timeline">
+								<div class="row exp-timeline">
 									<div class="col-xs-2">
 										<div class="timeline-st"></div>
 									</div>
@@ -462,15 +473,15 @@
 											</div>
 										</div>
 									</div>
-								</div> -->
+								</div> 
 							</div>
-						</section>
+						</section> -->
 						<!--/Experience Sec-->
-
-						<hr class="separater-hr"/>
+<!-- 
+						<hr class="separater-hr"/> -->
 
 						<!--Client Sec-->
-						<section id="client_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div client-wrap  sec-pad wow bounceIn" data-wow-duration=".4s">
+						<!-- <section id="client_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div client-wrap  sec-pad wow bounceIn" data-wow-duration=".4s">
 							<h6>clients</h6>
 							<div class="client-carousel">
 								<img src="img/compexlogo.png" alt="Compex">
@@ -480,7 +491,7 @@
 								<img src="img/client5.png" alt="client">
 								<img src="img/client2.png" alt="client">
 							</div>
-						</section>
+						</section> -->
 						<!--/Client Sec-->
 
 						<hr class="separater-hr"/>
@@ -488,30 +499,27 @@
 						<!--Achivement Sec-->
 						<section id="achivement_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div achivement-wrap  sec-pad-top sec-pad-bottom-sm">
 							<h6>Project</h6>
-							<p class="wow fadeInUp" data-wow-duration=".4s">It always seems impossible until its done. Participated in many projects both as a freelance contractor and a full-time employee working to give customer satisfaction. Will list a few notable projects</p>
+							<!-- <p class="wow fadeInUp" data-wow-duration=".4s">It always seems impossible until its done. Participated in many projects both as a freelance contractor and a full-time employee working to give customer satisfaction. Will list a few notable projects</p> -->
 							<div class="achivement-list-wrap margin-top-40">
 								<ul class="row">
 									<li class="col-sm-6">
 										<ul>
 											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0s">
 												<span class="dash-pointer">-</span>
-												<span class="achive-pts">Signal Alliance Website Redesign - Click <a style="color:#e91e63" href="http://www.signalalliance.com/" target="_blank">here</a> </span>
+												<span class="achive-pts"><a style="color:#e91e63" href="http://www.signalalliance.com/" target="_blank">Signal Alliance </a></span>
 											</li>
 											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0s">
 												<span class="dash-pointer">-</span>
-												<span class="achive-pts">Compex Africa Front-End Design- Click <a style="color:#e91e63" href="http://www.compexafrica.com" target="_blank">here</a> </span>
+												<span class="achive-pts"><a style="color:#e91e63" href="https://www.compexafrica.com/" target="_blank">Compex Africa</a></span>
 											</li>
-											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".2s"><span class="dash-pointer">-</span><span class="achive-pts">Sixart Labs Design - Click <a style="color:#e91e63" href="http://sixartlabs.com.ng/" target="_blank">here</a> </span></li>
-											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".4s"><span class="dash-pointer">-</span><span class="achive-pts">Coronation Securities E-Business Suite Design - Click <a style="color:#e91e63" href="http://test.infowarelimited.com/IWEBIZ" target="_blank">here</a> </span></li>
+											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".4s"><span class="dash-pointer">-</span><span class="achive-pts"><a style="color:#e91e63" href="http://test.infowarelimited.com/IWEBIZ" target="_blank">Coronation Merchant Bank</a> </span></li>
 											<!-- <li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".6s"><span class="dash-pointer">-</span><span class="achive-pts">U-Trade App Design &amp; Dev. - Click <a style="color:#e91e63" href="http://test.infowarelimited.com/IWEtrade" target="_blank">here</a> </span></li> -->
 										</ul>
 									</li>
 									<li class="col-sm-6">
 										<ul>
-											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0s"><span class="dash-pointer">-</span><span class="achive-pts">Lubell Design and Contruction Limited Website - Click <a style="color:#e91e63" href="http://staging.lubell.com.ng/" target="_blank">here</a></span></li>
-											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.2s"><span class="dash-pointer">-</span><span class="achive-pts">Proposed Genesis Cinemas Website - Click <a style="color:#e91e63" href="https://remix101.github.io/democinema/" target="_blank">here</a></span></li>
-											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".4s"><span class="dash-pointer">-</span><span class="achive-pts">Freelance Developer Website - Click <a style="color:#e91e63" href="https://remix101.github.io/developer/" target="_blank">here</a></span></li>
-											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".6s"><span class="dash-pointer">-</span><span class="achive-pts">Sixart Labs Test Design - Click <a style="color:#e91e63" href="https://remix101.github.io/sixart/" target="_blank">here</a></span></li>
+											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay="0.2s"><span class="dash-pointer">-</span><span class="achive-pts"> <a style="color:#e91e63" href="https://remix101.github.io/democinema/" target="_blank">Proposed Genesis Cinemas Redesign</a></span></li>
+											<li class="margin-bottom-xs wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".4s"><span class="dash-pointer">-</span><span class="achive-pts"><a style="color:#e91e63" href="https://www.transformify.org/" target="_blank">Transformify</a></span></li>
 										</ul>
 									</li>
 								</ul>
@@ -525,8 +533,8 @@
 						<section id="contact_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap sec-pad">
 							<h6>contact</h6>
 							<div data-ng-controller="ContactController" class="align-center wow fadeInUp" data-wow-duration=".4s">
-								<h3>Hello <span  data-ng-bind="formData.inputName||'friend'"></span>, I'd love to hear from you.</h3>
-								<div>
+								<h3>Hello <span  data-ng-bind="formData.inputName||'friend'"></span>, I'd love to hear from you. </h3>
+								<!-- <div>
 									<form data-ng-submit="submit(contactform, $event)"  name="contactform"  method="post" class="row form-horizontal" role="form">
 										<div class="form-group input--hoshi col-sm-6" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
 											<div class="input-wrap">
@@ -556,11 +564,11 @@
 										</div>
 									</form>
 									<p data-ng-class="result">{{ resultMessage }}</p>
+								</div> -->
+							</div>
+							<div>
+									<a id="sayhello" class="btn btn-primary float" href="mailTo:c.esumeh53@gmail.com">Say hello</a>							
 								</div>
-							</div>
-							<div class="email-direct">
-								<p class="wow fadeInRight" data-wow-duration=".4s">Or simply email me at <a href="mailto:c.esumeh53@gmail.com">c.esumeh53@gmail.com</a></p>
-							</div>
 						</section>
 						<!--Contact Sec-->
 
@@ -578,11 +586,11 @@
 
 										<!--Social Icons-->
 										<ul class="social-icons float-right">
-											<li>
+											<!-- <li>
 												<a href="https://www.facebook.com/charlesesumeh" class="social-icon">
 												<span class="fa" data-hover="&#xf09a;">&#xf09a;</span>
 												</a>
-											</li>
+											</li> -->
 											<li>
 												<a href="https://twitter.com/agentcue" class="social-icon">
 												<span class="fa" data-hover="&#xf099;">&#xf099;</span>
@@ -593,11 +601,11 @@
 												<span class="fa" data-hover="&#xf16e;">&#xf16e;</span>
 												</a>
 											</li> -->
-											<li>
+											<!-- <li>
 												<a href="https://www.instagram.com/agentcue/" class="social-icon">
 												<span class="fa" data-hover="&#xf16d;">&#xf16d;</span>
 												</a>
-											</li>
+											</li> -->
 										</ul>
 										<!--/Social Icons-->
 
@@ -610,7 +618,7 @@
 										</a>
 									</div>
 									<div class="copywrite-wrap text-right float-right">
-										<p class="copywrite">Fabricated by <b><a href="http://sixartlabs.com.ng/" style="color:#e91e63" target="_blank">Sixart Labs</a> &copy; 2017.</b> Updated <b>June, 2017.</b></p>
+										<p class="copywrite">Designed By Me</p>
 									</div>
 								</div>
 							</div>
